@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --off-white: #eeeee4;
+  --grey: #d6d6cd;
+  --onyx: #353935;
+  --blue: #1e90ff;
+  --orange: #fb4d3d;
+  --green: #03cea4;
+}
+
+.darkText {
+  color: var(--onyx);
+}
+
+body {
+  background-color: var(--off-white);
+  color: var(--onyx);
+}
+
+.intro {
+  font-family: "Libre Baskerville", serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  --main-color: var(--grey);
+  width: 450px;
+  text-align: center;
+  padding: 25px;
+  border-radius: 60px;
+  animation: fall 1s ease alternate both;
+}
+
+.title:hover {
+  animation: rise 1s ease alternate both;
+}
+
+.fullName {
+  color: var(--blue);
+}
+
+.hi {
+  color: var(--orange);
+}
+
+.role {
+  color: var(--green);
+}
+
+.navigation {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    ". . . . . . ."
+    ". l . m . r ."
+    ". . . . . . .";
+  place-items: center;
+}
+
+.card {
+  --main-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 2rem;
+  background-color: #eeeee4;
+  color: var(--main-color);
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+  animation: fall 1s ease alternate both;
+}
+
+.card:hover {
+  animation: rise 0.5s ease alternate both;
+}
+
+@keyframes rise {
+  0% {
+    box-shadow: 0px 0px var(--main-color);
+    border: 0px hidden var(--main-color);
+  }
+  100% {
+    transform: scale(1.05) translate(-2.5%, -2.5%);
+    box-shadow: 5px 7px var(--main-color);
+    border: 0.1px solid var(--main-color);
+  }
+}
+
+@keyframes fall {
+  0% {
+    transform: scale(1.05) translate(-2.5%, -2.5%);
+    box-shadow: 5px 7px var(--main-color);
+    border: 0.1px solid var(--main-color);
+  }
+
+  100% {
+    transform: scale(1) translate(0, 0);
+    box-shadow: none;
+    border: 0px hidden var(--main-color);
+  }
+}
+
+.card-one {
+  --main-color: var(--orange);
+  grid-area: l;
+}
+.card-two {
+  --main-color: var(--blue);
+  grid-area: m;
+}
+.card-three {
+  --main-color: var(--green);
+  grid-area: r;
+}
