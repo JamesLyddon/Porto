@@ -4,7 +4,6 @@
 
 html {
   scroll-behavior: smooth;
-  width: 100vw;
 }
 
 a {
@@ -28,20 +27,18 @@ a {
 body {
   background-color: var(--off-white);
   color: var(--onyx);
+  margin: 0;
+  padding: 0;
 }
 
 .intro {
   font-family: "Libre Baskerville", serif;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .title {
   --main-color: var(--grey);
-  width: 450px;
   text-align: center;
+  max-width: 450px;
   padding: 25px;
   border-radius: 60px;
   animation: fall 1s ease alternate both;
@@ -63,27 +60,17 @@ body {
   color: var(--green);
 }
 
-.navigation {
-  height: 100vh;
-  display: grid;
-  grid-template-areas:
-    ". . . . . . ."
-    ". l . m . r ."
-    ". . . . . . .";
-  place-items: center;
-}
-
 .card {
   --main-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0 2rem;
+  margin: 1rem;
   background-color: #eeeee4;
   color: var(--main-color);
-  width: 300px;
-  height: 200px;
+  width: 220px;
+  height: 150px;
   border-radius: 15px;
   animation: fall 1s ease alternate both;
 }
@@ -120,13 +107,34 @@ body {
 
 .card-one {
   --main-color: var(--orange);
-  grid-area: l;
 }
 .card-two {
   --main-color: var(--blue);
-  grid-area: m;
 }
 .card-three {
   --main-color: var(--green);
-  grid-area: r;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 1rem;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+@media only screen and (min-width: 600px) {
+  .navigation {
+    flex-direction: row;
+  }
 }
