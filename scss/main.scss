@@ -136,8 +136,8 @@ body {
   100% {
     transform: scale(1.05) translate(-2.5%, -2.5%);
     box-shadow: 3px 5px var(--main-color);
-    border-top: 0.01px solid var(--main-color);
-    border-left: 0.01px solid var(--main-color);
+    border-top: 0.1px solid var(--main-color);
+    border-left: 0.1px solid var(--main-color);
 
     background: var(--off-white);
   }
@@ -163,8 +163,8 @@ body {
   0% {
     transform: scale(1.05) translate(-2.5%, -2.5%);
     box-shadow: 3px 5px var(--main-color);
-    border-top: 0.01px solid var(--main-color);
-    border-left: 0.01px solid var(--main-color);
+    border-top: 0.1px solid var(--main-color);
+    border-left: 0.1px solid var(--main-color);
     background: var(--off-white);
   }
 
@@ -270,4 +270,17 @@ body {
 .icon {
   padding: 0 5px;
   margin-left: 0.5rem;
+}
+
+.email {
+  --main-color: var(--grey);
+}
+.linkedin {
+  --main-color: var(--blue);
+}
+.github {
+  --main-color: var(--orange);
+}
+.codepen {
+  --main-color: var(--green);
 }
