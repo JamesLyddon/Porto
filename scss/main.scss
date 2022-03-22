@@ -96,6 +96,23 @@ body {
   border-radius: 100px;
 }
 
+.card-icon {
+  --main-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--main-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+  animation: fall-icon 1s ease alternate both;
+}
+
+.card-icon:hover {
+  animation: rise-icon 0.5s ease alternate both;
+}
+
 @keyframes rise {
   0% {
     box-shadow: 0px 0px var(--main-color);
@@ -111,11 +128,43 @@ body {
   }
 }
 
+@keyframes rise-icon {
+  0% {
+    box-shadow: 0px 0px var(--main-color);
+    border: 0px hidden var(--main-color);
+  }
+  100% {
+    transform: scale(1.05) translate(-2.5%, -2.5%);
+    box-shadow: 3px 5px var(--main-color);
+    border-top: 0.01px solid var(--main-color);
+    border-left: 0.01px solid var(--main-color);
+
+    background: var(--off-white);
+  }
+}
+
 @keyframes fall {
   0% {
     transform: scale(1.05) translate(-2.5%, -2.5%);
     box-shadow: 10px 12px var(--main-color);
-    border: 0.1px solid var(--main-color);
+    border-top: 0.1px solid var(--main-color);
+    border-left: 0.1px solid var(--main-color);
+    background: var(--off-white);
+  }
+
+  100% {
+    transform: scale(1) translate(0, 0);
+    box-shadow: none;
+    border: 0px hidden var(--main-color);
+  }
+}
+
+@keyframes fall-icon {
+  0% {
+    transform: scale(1.05) translate(-2.5%, -2.5%);
+    box-shadow: 3px 5px var(--main-color);
+    border-top: 0.01px solid var(--main-color);
+    border-left: 0.01px solid var(--main-color);
     background: var(--off-white);
   }
 
@@ -220,4 +269,5 @@ body {
 
 .icon {
   padding: 0 5px;
+  margin-left: 0.5rem;
 }
