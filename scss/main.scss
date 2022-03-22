@@ -210,3 +210,15 @@ body {
     background: hsl(random(360), 70%, 50%);
   }
 }
+
+.navbar {
+  display: flex;
+  flex-direction: row-reverse;
+  position: fixed;
+  width: 100%;
+  padding: 1rem;
+}
+
+.icon {
+  padding: 5px;
+}
