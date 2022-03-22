@@ -149,7 +149,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0;
   padding: 0;
   height: 100vh;
 }
@@ -216,9 +215,9 @@ body {
   flex-direction: row-reverse;
   position: fixed;
   width: 100%;
-  padding: 1rem;
+  padding: 0 0.5rem;
 }
 
 .icon {
-  padding: 5px;
+  padding: 0 5px;
 }
