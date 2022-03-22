@@ -17,12 +17,12 @@ p {
 }
 
 :root {
-  --off-white: #eeeee4;
-  --grey: #d6d6cd;
-  --onyx: #353935;
-  --blue: #1e90ff;
-  --orange: #fb4d3d;
-  --green: #03cea4;
+  --off-white: rgba(238, 238, 228, 0.9);
+  --grey: rgba(214, 214, 205, 0.9);
+  --onyx: rgba(53, 57, 53, 0.9);
+  --blue: rgba(30, 144, 255, 0.9);
+  --orange: rgba(251, 77, 61, 0.9);
+  --green: rgba(3, 206, 164, 0.9);
 }
 
 .darkText {
@@ -283,4 +283,17 @@ body {
 }
 .codepen {
   --main-color: var(--green);
+}
+
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: var(--off-white); /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--orange); /* color of the scroll thumb */
+  border-radius: 50px; /* roundness of the scroll thumb */
+  opacity: 0.5;
+  height: 50px;
 }
