@@ -27,6 +27,7 @@ ul {
   --blue: rgba(30, 144, 255, 0.9);
   --orange: rgba(251, 77, 61, 0.9);
   --green: rgba(3, 206, 164, 0.9);
+  --melon: rgba(253, 188, 180, 0.9);
 }
 
 .darkText {
@@ -313,4 +314,8 @@ body::-webkit-scrollbar-thumb {
   width: 60%;
   display: flex;
   justify-content: space-around;
+}
+
+.arrowbuttons {
+  display: flex;
 }
