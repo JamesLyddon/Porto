@@ -23,8 +23,26 @@ ul {
 li {
   margin-top: 0.5rem;
 }
+
 li:hover {
-  animation: gloss 0.5s ease alternate both;
+  animation: gloss 0.4s ease infinite both;
+}
+
+@keyframes gloss {
+  0% {
+    transform: skew(0deg);
+    filter: opacity(100%);
+  }
+  25% {
+    transform: skew(5deg, -5deg);
+  }
+  50% {
+    filter: opacity(70%);
+  }
+
+  75% {
+    transform: skew(-5deg, 5deg);
+  }
 }
 
 :root {
@@ -130,21 +148,6 @@ body {
 
 .card-icon:hover {
   animation: rise-icon 0.5s ease alternate both;
-}
-
-@keyframes gloss {
-  0% {
-    box-shadow: 0px 0px var(--main-color);
-    border: 0px hidden var(--main-color);
-  }
-  100% {
-    transform: scale(1.05) translate(-2.5%, -2.5%);
-    box-shadow: 10px 12px var(--main-color);
-    border-top: 0.1px solid var(--main-color);
-    border-left: 0.1px solid var(--main-color);
-
-    background: var(--off-white);
-  }
 }
 
 @keyframes rise {
@@ -340,4 +343,5 @@ body::-webkit-scrollbar-thumb {
 
 .arrowbuttons {
   display: flex;
+  justify-content: center;
 }
