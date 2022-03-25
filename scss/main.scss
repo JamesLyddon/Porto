@@ -84,9 +84,10 @@ li {
   align-items: center;
   text-align: center;
   margin: 1rem;
+  padding: 1rem;
   color: var(--main-color);
-  width: 220px;
-  height: 150px;
+  width: 180px;
+  height: 120px;
   border-radius: 15px;
   animation: fall 0.5s ease both;
 }
@@ -186,6 +187,10 @@ li:focus {
   }
   .navbar {
     justify-content: center;
+  }
+  .card {
+    width: 150px;
+    height: 100px;
   }
   .about,
   .tech,
