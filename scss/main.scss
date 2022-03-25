@@ -215,6 +215,9 @@ body {
 .card-green {
   --main-color: var(--green);
 }
+.card-iris {
+  --main-color: var(--iris);
+}
 
 .intro {
   display: flex;
@@ -301,19 +304,6 @@ body {
 .icon {
   padding: 0 5px;
   margin-left: 0.5rem;
-}
-
-.email {
-  --main-color: var(--grey);
-}
-.linkedin {
-  --main-color: var(--blue);
-}
-.github {
-  --main-color: var(--orange);
-}
-.codepen {
-  --main-color: var(--green);
 }
 
 body::-webkit-scrollbar {
