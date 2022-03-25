@@ -74,7 +74,7 @@ li {
   max-width: 450px;
   padding: 25px;
   border-radius: 60px;
-  animation: fall 1s ease alternate both;
+  animation: fall 0.5s ease both;
 }
 .card {
   display: flex;
@@ -86,7 +86,7 @@ li {
   width: 220px;
   height: 150px;
   border-radius: 15px;
-  animation: fall 1s ease alternate both;
+  animation: fall 0.5s ease both;
 }
 .card-round {
   width: 50px;
@@ -103,7 +103,7 @@ li {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  animation: fall-icon 1s ease alternate both;
+  animation: fall-icon 0.5s ease alternate both;
 }
 .intro {
   display: flex;
@@ -248,7 +248,7 @@ body::-webkit-scrollbar-thumb {
   }
   100% {
     transform: scale(1.05) translate(-2.5%, -2.5%);
-    box-shadow: 10px 12px var(--main-color);
+    box-shadow: 8px 8px var(--main-color);
     border-top: 0.1px solid var(--main-color);
     border-left: 0.1px solid var(--main-color);
 
@@ -261,8 +261,8 @@ body::-webkit-scrollbar-thumb {
     border: 0px hidden var(--main-color);
   }
   100% {
-    transform: scale(1.05) translate(-2.5%, -2.5%);
-    box-shadow: 3px 5px var(--main-color);
+    transform: scale(1.05) translate(-1.5%, -1.5%);
+    box-shadow: 4px 4px var(--main-color);
     border-top: 0.1px solid var(--main-color);
     border-left: 0.1px solid var(--main-color);
 
@@ -272,7 +272,7 @@ body::-webkit-scrollbar-thumb {
 @keyframes fall {
   0% {
     transform: scale(1.05) translate(-2.5%, -2.5%);
-    box-shadow: 10px 12px var(--main-color);
+    box-shadow: 8px 8px var(--main-color);
     border-top: 0.1px solid var(--main-color);
     border-left: 0.1px solid var(--main-color);
     background: var(--off-white);
@@ -286,8 +286,8 @@ body::-webkit-scrollbar-thumb {
 }
 @keyframes fall-icon {
   0% {
-    transform: scale(1.05) translate(-2.5%, -2.5%);
-    box-shadow: 3px 5px var(--main-color);
+    transform: scale(1.05) translate(-1.5%, -1.5%);
+    box-shadow: 4px 4px var(--main-color);
     border-top: 0.1px solid var(--main-color);
     border-left: 0.1px solid var(--main-color);
     background: var(--off-white);
