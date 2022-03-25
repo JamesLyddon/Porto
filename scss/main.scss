@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Libre Baskerville", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -10,10 +10,6 @@ html {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-p {
-  font-family: "Roboto", sans-serif;
 }
 
 ul {
@@ -70,11 +66,17 @@ li:focus {
   color: var(--green);
 }
 
+.irisText {
+  color: var(--iris);
+}
+
 .darkText,
 .orangeText,
 .blueText,
-.greenText {
+.greenText,
+.irisText {
   font-family: inherit;
+  font-weight: bold;
 }
 
 body {
