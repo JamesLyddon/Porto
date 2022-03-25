@@ -185,9 +185,16 @@ li:focus {
   }
 }
 @media only screen and (max-width: 600px) {
-  .about {
+  .about,
+  .tech,
+  .projects {
     justify-content: flex-start;
-    margin-top: 4rem;
+  }
+  .about-copy,
+  .tech-copy,
+  .projects-copy {
+    padding-top: 3.5rem;
+    font-size: 0.8rem;
   }
 }
 // Particle background ///////////////////////////////////////////////////
