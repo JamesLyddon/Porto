@@ -1,4 +1,4 @@
-// Color Theme //
+// Color Theme ///////////////////////////////////////////////////
 :root {
   --off-white: rgba(238, 238, 228, 0.9);
   --grey: rgba(214, 214, 205, 0.9);
@@ -43,7 +43,7 @@
 .card-iris {
   --main-color: var(--iris);
 }
-// Element Selectors //
+// Element Selectors ///////////////////////////////////////////////////
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -67,7 +67,7 @@ ul {
 li {
   margin-top: 0.5rem;
 }
-// Class Selectors //
+// Class Selectors ///////////////////////////////////////////////////
 .title {
   --main-color: var(--grey);
   text-align: center;
@@ -142,7 +142,7 @@ li {
   padding: 0 5px;
   margin-left: 0.5rem;
 }
-// Multi-class Selectors //
+// Multi-class Selectors ///////////////////////////////////////////////////
 .about,
 .tech,
 .projects {
@@ -159,7 +159,7 @@ li {
   width: 80vw;
   max-width: 800px;
 }
-// Hover/Focus //
+// Hover/Focus ///////////////////////////////////////////////////
 li:hover,
 li:focus {
   animation: wiggle 0.2s ease both;
@@ -176,16 +176,16 @@ li:focus {
 .card-icon:focus {
   animation: rise-icon 0.5s ease alternate both;
 }
-// Media Queries //
+// Media Queries ///////////////////////////////////////////////////
 @media only screen and (min-width: 600px) {
   .navigation {
     flex-direction: row;
   }
 }
-// Particle background //
+// Particle background ///////////////////////////////////////////////////
 .particle {
   position: absolute;
-  border-radius: 35%;
+  border-radius: 50%;
 }
 @for $i from 1 through 100 {
   @keyframes particle-animation-#{$i} {
@@ -199,7 +199,7 @@ li:focus {
   }
   .particle:nth-child(#{$i}) {
     animation: particle-animation-#{$i} 60s infinite;
-    $size: random(1) + 5 + px;
+    $size: random(1) + 3 + px;
     opacity: random(100) / 100;
     height: $size;
     width: $size;
@@ -209,10 +209,11 @@ li:focus {
       (random(90) * 1vh),
       (random(100) * 1px)
     );
+    filter: blur(random(10) * 0.1px);
     background: hsl(random(360), 70%, 50%);
   }
 }
-// Scrollbar Styling //
+// Scrollbar Styling ///////////////////////////////////////////////////
 body::-webkit-scrollbar {
   width: 12px;
 }
@@ -225,7 +226,7 @@ body::-webkit-scrollbar-thumb {
   opacity: 0.5;
   height: 50px;
 }
-// Animations //
+// Animations ///////////////////////////////////////////////////
 @keyframes wiggle {
   0% {
     transform: skew(0deg);
