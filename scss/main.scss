@@ -184,7 +184,9 @@ li:focus {
   .navigation {
     flex-direction: column;
   }
-
+  .navbar {
+    justify-content: center;
+  }
   .about,
   .tech,
   .projects {
