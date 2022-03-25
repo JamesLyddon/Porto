@@ -25,16 +25,15 @@ li {
 }
 
 li:hover {
-  animation: gloss 0.1s ease infinite both;
+  animation: wiggle 0.2s ease both;
 }
 
-@keyframes gloss {
+@keyframes wiggle {
   0% {
     transform: skew(0deg);
-    filter: opacity(100%);
   }
   25% {
-    transform: skew(5deg, -5deg);
+    transform: skew(7deg, -7deg);
   }
 
   50% {
@@ -42,7 +41,7 @@ li:hover {
   }
 
   75% {
-    transform: skew(-5deg, 5deg);
+    transform: skew(-7deg, 7deg);
   }
 }
 
