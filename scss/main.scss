@@ -24,7 +24,8 @@ li {
   margin-top: 0.5rem;
 }
 
-li:hover {
+li:hover,
+li:focus {
   animation: wiggle 0.2s ease both;
 }
 
@@ -92,7 +93,8 @@ body {
   animation: fall 1s ease alternate both;
 }
 
-.title:hover {
+.title:hover,
+.title:focus {
   animation: rise 1s ease alternate both;
 }
 
@@ -122,7 +124,8 @@ body {
   animation: fall 1s ease alternate both;
 }
 
-.card:hover {
+.card:hover,
+.card:focus {
   animation: rise 0.5s ease alternate both;
 }
 
@@ -146,7 +149,8 @@ body {
   animation: fall-icon 1s ease alternate both;
 }
 
-.card-icon:hover {
+.card-icon:hover,
+.card-icon:focus {
   animation: rise-icon 0.5s ease alternate both;
 }
 
@@ -266,7 +270,7 @@ body {
 /* PARTICLES */
 .particle {
   position: absolute;
-  border-radius: 50%;
+  border-radius: 35%;
 }
 
 @for $i from 1 through 100 {
